@@ -38,7 +38,7 @@ func main() {
   var lista [5]Contato
 
   for {
-    fmt.Print("Digite 1 para adicionar um contato, 2 para excluir e 3 para sair")
+    fmt.Print("Digite 1 para adicionar um contato, 2 para excluir e 3 para sair: ")
 
     var res int
     fmt.Scan(&res)
