@@ -20,7 +20,7 @@ func adicionarContato(arr *[5]Contato, contato Contato){
       return
     }
   }
-  fmt.Print("Lista de contatos cheia")
+  fmt.Println("Lista de contatos cheia")
 }
 
 func removerContato(arr *[5]Contato){
@@ -30,7 +30,7 @@ func removerContato(arr *[5]Contato){
       return
     }
   }
-  fmt.Print("Lista de contatos vazia")
+  fmt.Println("Lista de contatos vazia")
 }
 
 func main() {
@@ -54,7 +54,7 @@ func main() {
       case 2:
         removerContato(&lista)
       case 3:
-        break
+        return
     }
 
     fmt.Println(lista)
