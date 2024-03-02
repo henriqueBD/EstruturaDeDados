@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 //Aluno: Henrique Barbosa Dantas Rolan
@@ -33,9 +33,9 @@ func converteCelsiusParaFahrenheit(celsius float64) float64{
 
 func main() {
   // Teste das funções
-  
+
   fmt.Println(calculaMedia(0,128))
   fmt.Println(verificaParidade(64))
-	fmt.Println(minhaPotencia(2,6))
+  fmt.Println(minhaPotencia(2,6))
   fmt.Printf("%.2f\n", converteCelsiusParaFahrenheit(17.7778))
 }
