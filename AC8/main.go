@@ -25,6 +25,11 @@ func RevisaoDeContrato(){
       }
     }
 
+    if len(tmp) == 0{
+      res = append(res, "0")
+      continue
+    }
+
     i := 0
 
     for i < len(tmp) && tmp[i] == '0'{i++}
@@ -32,8 +37,6 @@ func RevisaoDeContrato(){
     if i != len(tmp) {
       tmp = tmp[i:]
       res = append(res, tmp)
-    } else if len(tmp) == 0{
-      res = append(res, "0")
     }else if tmp[0] == '0'{
       res = append(res, "0")
     }else{
